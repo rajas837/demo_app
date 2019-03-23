@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hash>
+  <id type="integer">26</id>
+  <name>from_terminal_updated</name>
+  <email>terminal@gmail.com</email>
+  <password>ede997b0caf2ec398110d79d9eba38bb</password>
+  <confirm-password>ede997b0caf2ec398110d79d9eba38bb</confirm-password>
+  <mobile-no>44444</mobile-no>
+  <created-at>2019-01-19T07:04:00.144Z</created-at>
+  <updated-at>2019-01-19T07:04:00.144Z</updated-at>
+  <address nil="true"/>
+</hash>

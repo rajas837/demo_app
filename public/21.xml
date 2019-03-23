@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hash>
+  <id type="integer">21</id>
+  <name>testaccount</name>
+  <email>testwebmail141296@gmail.com</email>
+  <password>21232f297a57a5a743894a0e4a801fc3</password>
+  <confirm-password>21232f297a57a5a743894a0e4a801fc3</confirm-password>
+  <mobile-no>8778566502</mobile-no>
+  <created-at>2018-12-27T15:58:24.265Z</created-at>
+  <updated-at>2018-12-27T15:58:24.265Z</updated-at>
+  <address>1st Floor, A Wing, IndiQube Alpha,, Kadubeesanahalli, Outer Ring Road, Beng</address>
+</hash>

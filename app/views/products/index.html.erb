@@ -1,0 +1,30 @@
+<table class="table table-striped">
+<tr>
+    <th>Product Image</th>
+    <th>Name</th>
+    <th>Brand</th>
+    <th>Size</th>
+    <th>Price</th>
+</tr>
+<% @product.each do | product | %>
+    <tr>
+        <td>
+        <% unless product.images.nil? %>
+            <% product.images.each do |image |%>
+                <%= image_tag image.photo(:thumb) %>
+            <%end%>
+        <% end %>
+        </td>
+        <td><%= product.name %></td>
+        <td><%= product.brand %></td>
+        <td><%= product.size %></td>
+        <td><%= product.price %></td>
+        <td><%= link_to "Buy", "purchase_item?product_id=#{product.id}" %></td>
+        <td><%= link_to "Show", product_path(product) %></td>
+        <td><%= link_to "Edit", edit_product_path(product) %></td>
+        <td><%= link_to "Delete", product, method: :delete, data: {confirm: "Are you sure ?"} %></td>
+    </tr>
+<%end%>
+</table>
+<%= link_to "Add Product",new_product_path %><br/>
+<%= link_to "Go to Users",users_path %>

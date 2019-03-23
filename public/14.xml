@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hash>
+  <id type="integer">14</id>
+  <name>Raj</name>
+  <email>raj@gmail.com</email>
+  <password>65a1223dae83b8092c4edba0823a793c</password>
+  <confirm-password>65a1223dae83b8092c4edba0823a793c</confirm-password>
+  <mobile-no>8889999555</mobile-no>
+  <created-at>2018-12-24T15:35:40.535Z</created-at>
+  <updated-at>2018-12-24T15:36:16.336Z</updated-at>
+  <address>Chennai</address>
+</hash>

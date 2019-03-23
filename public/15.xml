@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hash>
+  <id type="integer">15</id>
+  <name>test</name>
+  <email>test1@gmail.com</email>
+  <password>5d41402abc4b2a76b9719d911017c592</password>
+  <confirm-password>21232f297a57a5a743894a0e4a801fc3</confirm-password>
+  <mobile-no>8888</mobile-no>
+  <created-at>2018-12-24T16:30:16.656Z</created-at>
+  <updated-at>2018-12-24T16:30:16.656Z</updated-at>
+  <address>BTM</address>
+</hash>

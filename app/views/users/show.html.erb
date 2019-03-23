@@ -1,0 +1,18 @@
+<table class="table table-striped">
+<tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Mobile No</th>
+    <th>Address</th>
+</tr>
+<tr>
+    <td><%= @user.name %></td>
+    <td><%= @user.email %></td>
+    <td><%= @user.mobile_no %></td>
+    <td><%= @user.address %></td>
+    <td><%= link_to "Edit", edit_user_path(@user) %></td>
+    <td><%= link_to "Delete", @user, method: :delete, data: {confirm: "Are you sure ?"} %></td>
+</tr>
+</table>
+<%= link_to "Add users",new_user_path %><br/>
+<%= link_to "Go to Users", users_path %>

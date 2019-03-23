@@ -1,0 +1,28 @@
+<%= form_for @product do | f | %>
+<table class="table table-striped">
+<tr>
+    <td><%= f.label :name%></td>
+    <td><%= f.text_field :name %></td>
+</tr>
+<tr>
+    <td><%= f.label :brand%></td>
+    <td><%= f.text_field :brand %></td>
+</tr>
+<tr>
+    <td><%= f.label :size%></td>
+    <td>
+    <%# <%= f.text_field :size %>
+    <%= f.select :size, %w(M S L XL XXL) %>
+    </td>
+</tr>
+<tr>
+    <td><%= f.label :price%></td>
+    <td><%= f.text_field :price%></td>
+</tr>
+<tr>
+    <td></td>
+    <td><%= f.submit "Update"%></td>
+</tr>
+</table>
+<% end %>
+<%= link_to "Go to Products",products_path%>

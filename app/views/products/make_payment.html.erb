@@ -1,0 +1,21 @@
+<%= form_tag action: "process_payment", method: :post, id: params[:product_id] do %>
+<table>
+<%= label_tag :item_value%>
+<%= text_field_tag :item_value, @product.price, readonly: true %>
+<%= label_tag :first_name%>
+<%= text_field_tag :first_name%>
+<%= label_tag :last_name%>
+<%= text_field_tag :last_name%>
+<%= label_tag :company%>
+<%= text_field_tag :company%>
+<%= label_tag :email%>
+<%= text_field_tag :email%>
+<%= label_tag :phone%>
+<%= text_field_tag :phone%>
+<%= label_tag :credit_card_number%>
+<%= text_field_tag :credit_card_number%>
+<%= label_tag :expiry_date%>
+<%= date_select :date, :expiry_date%>
+<%= submit_tag "Buy"%>
+</table>
+<%end%>

@@ -1,0 +1,33 @@
+<%= form_tag action: :authentication, method: :post do %>
+ <table class="table table-striped">
+ <tr>
+ <td><%= label_tag :email%></td>
+ <td><%= email_field_tag :email%></td>
+ </tr>
+  <tr>
+ <td><%= label_tag :password%></td>
+ <td><%= password_field_tag :password%></td>
+ </tr>
+ <tr>
+ <td><%= submit_tag "Sign In"%></td>
+  <td><%= link_to "Sign Up", new_user_path%></td>
+ </tr>
+ </table>
+<% end %>
+<%= link_to "Facebook",  "/auth/facebook" %>
+<%# <%= form_for(@user, url: :authenticate_users, method: :post) do | f |%>
+  <%# <table>
+  <tr> %>
+    <%# <td><%= f.label :email%></td>
+    <%# <td><%= f.email_field :email%></td> 
+  <%# </tr>
+  <tr>
+    <td><%= f.label :password%></td>
+    <%# <td><%= f.password_field :password%></td>
+  <%# </tr>
+    <tr>
+    <td></td>
+    <td><%= f.submit "Sign In"%></td>
+  <%# </tr>
+  </table>
+<%end %>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DemoApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <% if session[:user_id].present?%>
+    <%= link_to "Logout", logout_users_path, method: :delete %>
+    <%end%>
+    <% flash.each do |key , value|%>
+      <%= value%>
+    <%end%>
+    <%= yield %>
+  </body>
+</html>

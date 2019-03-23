@@ -1,0 +1,7 @@
+production:
+  adapter: postgresql
+  username: postgres
+  password: postgres
+  database: demo_app
+  host: localhost
+  pool: 5000

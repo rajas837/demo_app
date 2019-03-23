@@ -1,0 +1,41 @@
+<br />
+<% if @product.errors.full_messages.any? %>
+    <% @product.errors.full_messages.each do | error_messagge | %>
+        <%= error_messagge %> <br />
+    <% end %>
+<% end %>
+<%= form_for @product do | f| %>
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<table class="table table-striped">
+<tr>
+    <td><%= f.label :name%></td>
+    <td><%= f.text_field :name %></td>
+</tr>
+<tr>
+    <td><%= f.label :brand%></td>
+    <td><%= f.text_field :brand %></td>
+</tr>
+<tr>
+    <td><%= f.label :size%></td>
+    <td><%= f.select :size, %w(M S L XL XXL) %></td>
+</tr>
+<tr>
+    <td><%= f.label :price%></td>
+    <td><%= f.text_field :price%></td>
+</tr>
+<tr>
+    <%= f.fields_for :images do | im | %>
+        <td><%= im.label :photo %></td>
+        <td><%= im.file_field :photo, multiple: true %></td>
+    <% end %>
+</tr>
+<tr>
+    <td></td>
+    <td><%= f.submit "Add Product"%></td>
+</tr>
+</table>
+<% end %>
+</div>
+<div class="col-md-3"></div>
+<div class="col-md-12"><%= link_to "Go to Products",products_path%></div>
